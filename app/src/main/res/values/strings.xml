@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nest Hunt</string>
+    <string name="enter_mobile_numbe_for_verification">Enter Mobile Number For Verification</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="continue1">continue</string>
+    <string name="enter_otp">enter OTP</string>
+    <string name="enter_otp_for_verification">enter OTP for Verification</string>
+</resources>
