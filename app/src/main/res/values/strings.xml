@@ -5,4 +5,6 @@
     <string name="continue1">continue</string>
     <string name="enter_otp">enter OTP</string>
     <string name="enter_otp_for_verification">enter OTP for Verification</string>
+    <string name="contact_number">contact number:</string>
+    <string name="amenities">Amenities:</string>
 </resources>
