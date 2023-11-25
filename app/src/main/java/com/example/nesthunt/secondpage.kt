@@ -1,5 +1,6 @@
 package com.example.nesthunt
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -41,10 +42,10 @@ class secondpage : AppCompatActivity() {
             .setCallbacks(object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
                 override fun onVerificationCompleted(p0: PhoneAuthCredential) {
                     dialog.dismiss()
-                    Toast.makeText(this@secondpage, "Verification Successful", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(this@secondpage, "Verification Successful", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@secondpage, MainActivity::class.java)
+                    startActivity(intent)
                 }
-
                 override fun onVerificationFailed(p0: FirebaseException) {
                     Toast.makeText(this@secondpage, "Please Try Again", Toast.LENGTH_SHORT).show()
                 }
@@ -66,7 +67,6 @@ class secondpage : AppCompatActivity() {
                 auth.signInWithCredential(credential)
                     .addOnFailureListener {
                         Log.e("Authentication", "Failed: ${it.message}", it)
-                        // Handle the error gracefully, show appropriate error message to the user
                     }
 
                     .addOnCompleteListener {

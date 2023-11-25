@@ -24,5 +24,18 @@ class MainActivity : AppCompatActivity() {
         adapter = adapter(dataInput.getData(), this)
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
+//        **********************NOT WORKING*********************
+//        adapter.setOnClickListener(object : View.OnClickListener {
+//            fun onClick(position: Int, model: dataInput?) {
+//                val intent = Intent(this@MainActivity, clickingPage::class.java)
+//                startActivity(intent)
+//            }
+//
+//            override fun onClick(p0: View?) {
+//                TODO("Not yet implemented")
+//            }
+//        })
+
+
     }
 }

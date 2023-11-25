@@ -13,6 +13,11 @@ class clickingPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityClickingPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val name= intent.getParcelableExtra<dataclass>("name")
+        if (name!=null){
+            binding.hsotelName.text=name.name
+            binding.Hostelimage.setImageResource(name.image)
+        }
 
     }
 
