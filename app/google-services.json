@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295856349119",
+    "project_id": "nesthunt-fa575",
+    "storage_bucket": "nesthunt-fa575.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295856349119:android:9be32173ed97fffca0cb0a",
+        "android_client_info": {
+          "package_name": "com.example.nesthunt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz5TPRs1OSII0MsfL__FPWcwtLU8kUJEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
